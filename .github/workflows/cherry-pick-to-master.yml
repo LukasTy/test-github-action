@@ -25,8 +25,8 @@ jobs:
           branch: master
           body: 'Cherry-pick of #{old_pull_request_id}'
           cherry-pick-branch: ${{ format('cherry-pick-{0}', github.event.number) }}
-          author: ${{ format('{0} <{1+0}@users.noreply.github.com>', github.event.pull_request.user.login, github.event.pull_request.user.id) }}
-          committer: ${{ format('{0} <{1+0}@users.noreply.github.com>', github.event.pull_request.user.login, github.event.pull_request.user.id) }}
+          author: ${{ format('{0} <{1}+{0}@users.noreply.github.com>', github.event.pull_request.user.login, github.event.pull_request.user.id) }}
+          committer: ${{ format('{0} <{1}+{0}@users.noreply.github.com>', github.event.pull_request.user.login, github.event.pull_request.user.id) }}
           labels: |
             cherry-pick
 env:
