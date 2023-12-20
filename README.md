@@ -6,4 +6,5 @@ You will find several commits/PRs/issues that you can just ignore and go ahead. 
 
 Add something to readme, test addition
 Another one.
-A
+
+A.
